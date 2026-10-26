@@ -3,10 +3,10 @@ message: "If you use Nodedr OrderRestro in research, teaching, or a public proje
 type: software
 title: "Nodedr OrderRestro"
 authors:
-  - family-names: Ranjit
-    given-names: Raktim
-    website: https://www.raktimranjit.com/
-repository-code: https://github.com/Raktim94/nodedr-restaurant-pos
-url: https://orderrestro.nodedr.com/
+  - family-names: Shaikh
+    given-names: Noman
+    website: https://github.com/Nomaan2288
+repository-code: https://github.com/Nomaan2288/Restaurant-Management-System
+url: https://github.com/Nomaan2288/Restaurant-Management-System
 license: AGPL-3.0-only
-abstract: "Offline-first, self-hosted restaurant management software with point of sale, tables, kitchen display, reservations, and inventory."
+abstract: "Offline-first, self-hosted restaurant management software with point of sale, tables, kitchen display, reservations, and inventory. Created By Noman Shaikh."

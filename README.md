@@ -21,9 +21,9 @@ dine-in, takeaway, delivery and kitchen operations.
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Status](https://img.shields.io/badge/status-active%20development-orange.svg)](./ROADMAP.md)
 
-Developed by [NodeDR Infotech Private Limited](https://www.nodedr.com/)
+**Created By Noman Shaikh**
 
-**[Try OrderRestro](https://orderrestro.nodedr.com/)** · **[Case study](https://www.raktimranjit.com/projects/orderrestro)** · **[Maintainer: Raktim Ranjit](https://www.raktimranjit.com/)**
+**[GitHub Repository](https://github.com/Nomaan2288/Restaurant-Management-System)** · **Maintainer: Noman Shaikh**
 
 <p align="center">
   <img src="docs/assets/hero-animated.svg" alt="Nodedr OrderRestro: animated overview with an illustrative sample screen" width="100%">
@@ -344,7 +344,7 @@ already bundled, which is all this project requires.
 ### One-click install
 
 ```bash
-git clone https://github.com/Raktim94/nodedr-restaurant-pos.git && cd nodedr-restaurant-pos && ./install.sh
+git clone https://github.com/Nomaan2288/Restaurant-Management-System.git && cd Restaurant-Management-System && ./install.sh
 ```
 
 [`install.sh`](install.sh) generates a `.env` with random secrets (only if
@@ -365,8 +365,8 @@ If you'd rather run each step yourself (e.g. to set your own secrets instead
 of generated ones):
 
 ```bash
-git clone https://github.com/Raktim94/nodedr-restaurant-pos.git
-cd nodedr-restaurant-pos
+git clone https://github.com/Nomaan2288/Restaurant-Management-System.git
+cd Restaurant-Management-System
 cp .env.example .env        # edit JWT_SECRET / POSTGRES_PASSWORD for anything beyond local dev
 docker compose up -d --build
 docker exec nodedr-restaurant-backend npx ts-node prisma/seed.ts   # optional: demo data + login; upsert-based, safe to re-run
@@ -493,8 +493,7 @@ This project follows the [Contributor Covenant](./CODE_OF_CONDUCT.md).
 
 ## License
 
-Copyright © 2026 [Nodedr Infotech Private Limited](https://www.nodedr.com/)
-and Raktim Ranjit. Licensed under the
+Created By Noman Shaikh. Based on OrderRestro, Licensed under the
 [GNU Affero General Public License v3.0](./LICENSE) (AGPL-3.0). In short:
 you're free to self-host, use, and modify this software for your
 restaurant or business. If you modify it and run that modified version
@@ -516,7 +515,7 @@ See [`MAINTAINERS.md`](./MAINTAINERS.md) for project maintainers.
 
 Read the [OrderRestro case study](https://www.raktimranjit.com/projects/orderrestro) for the product background and design decisions.
 
-Maintainer: [Raktim Ranjit](https://www.raktimranjit.com/)
+Maintainer: [Noman Shaikh](https://github.com/Nomaan2288) — Created By Noman Shaikh
 
 ---
 

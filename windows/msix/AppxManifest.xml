@@ -6,21 +6,18 @@
   IgnorableNamespaces="uap rescap">
 
   <!--
-    Package identity. Name/Publisher come from Partner Center's "View
-    product identity" page for this app (Store ID 9NVPNLWW2FZ4, PFN
-    NODEDRINFOTECHLIMITED.NodedrOrderRestro_wsh4jzg5a6682) — Publisher MUST
-    exactly match the CN issued there, or Store validation and any
-    Add-AppxPackage install reject the package.
+    Package identity. Name/Publisher can be configured for Windows sideloading
+    or matched to your Microsoft Partner Center product identity.
   -->
   <Identity
-    Name="NODEDRINFOTECHLIMITED.NodedrOrderRestro"
-    Publisher="CN=11C721FC-E399-4888-B532-7BFCD5C491B3"
+    Name="NomanShaikh.OrderRestro"
+    Publisher="CN=NomanShaikh"
     Version="1.0.4.0"
     ProcessorArchitecture="x64" />
 
   <Properties>
-    <DisplayName>Nodedr OrderRestro</DisplayName>
-    <PublisherDisplayName>NODEDR INFOTECH LIMITED</PublisherDisplayName>
+    <DisplayName>OrderRestro</DisplayName>
+    <PublisherDisplayName>Noman Shaikh</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

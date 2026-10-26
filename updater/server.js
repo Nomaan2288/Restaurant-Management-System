@@ -48,7 +48,7 @@ const json = async (m, p, b) => { const t = await docker(m, p, b); return t ? JS
 const enc = encodeURIComponent;
 
 function splitImage(ref) {
-  // "ghcr.io/raktim94/nodedr-restaurant-pos-backend:1.4.0" -> repo + tag (a registry port
+  // "ghcr.io/nomaan2288/restaurant-management-system-backend:1.4.0" -> repo + tag (a registry port
   // colon is before the last slash, so only a colon after it is a tag).
   const slash = ref.lastIndexOf('/');
   const colon = ref.indexOf(':', slash + 1);
@@ -146,7 +146,7 @@ const server = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/v1/status') return send(200, status);
   if (req.method === 'POST' && req.url === '/v1/update') {
     let raw = '';
-    req.on('data', (c) => { raw += c; if (raw.length > 4096) req.destroy(); });
+    req.on('data', (c) => { raw += c; if (raw.length > 4096) { req.destroy(); return; } });
     req.on('end', () => {
       let version; try { version = JSON.parse(raw).version; } catch {}
       if (!VERSION_RE.test(String(version))) return send(400, { error: 'version must look like 1.2.3' });

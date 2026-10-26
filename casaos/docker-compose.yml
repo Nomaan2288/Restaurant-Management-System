@@ -137,15 +137,15 @@ x-casaos:
     - amd64
     - arm64
   main: web
-  author: Nodedr Infotech Private Limited
-  developer: Raktim94
+  author: Noman Shaikh
+  developer: Noman Shaikh
   category: Finance
-  icon: https://cdn.jsdelivr.net/gh/Raktim94/nodedr-restaurant-pos@master/casaos/icon.png
-  thumbnail: https://cdn.jsdelivr.net/gh/Raktim94/nodedr-restaurant-pos@master/casaos/thumbnail.png
+  icon: https://cdn.jsdelivr.net/gh/Nomaan2288/Restaurant-Management-System@main/casaos/icon.png
+  thumbnail: https://cdn.jsdelivr.net/gh/Nomaan2288/Restaurant-Management-System@main/casaos/thumbnail.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/Raktim94/nodedr-restaurant-pos@master/casaos/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/Raktim94/nodedr-restaurant-pos@master/casaos/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/Raktim94/nodedr-restaurant-pos@master/casaos/screenshot-3.png
+    - https://cdn.jsdelivr.net/gh/Nomaan2288/Restaurant-Management-System@main/casaos/screenshot-1.png
+    - https://cdn.jsdelivr.net/gh/Nomaan2288/Restaurant-Management-System@main/casaos/screenshot-2.png
+    - https://cdn.jsdelivr.net/gh/Nomaan2288/Restaurant-Management-System@main/casaos/screenshot-3.png
   title:
     en_US: Nodedr OrderRestro
   tagline:
@@ -227,6 +227,6 @@ x-casaos:
       management with QR ordering, reservations, inventory, customer
       loyalty/CRM, and billing.
   website: "https://orderrestro.nodedr.com/"
-  repo: "https://github.com/Raktim94/nodedr-restaurant-pos"
+  repo: "https://github.com/Nomaan2288/Restaurant-Management-System"
   support: "https://orderrestro.nodedr.com/contact"
-  docs: "https://github.com/Raktim94/nodedr-restaurant-pos#readme"
+  docs: "https://github.com/Nomaan2288/Restaurant-Management-System#readme"

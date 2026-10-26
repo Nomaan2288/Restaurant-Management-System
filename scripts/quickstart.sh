@@ -9,15 +9,15 @@
 # installer (which generates a .env with random secrets on first run).
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/Raktim94/nodedr-restaurant-pos/master/scripts/quickstart.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/Nomaan2288/Restaurant-Management-System/main/scripts/quickstart.sh | bash
 #
 # Safe to re-run: every step only acts if the previous one didn't already
 # succeed, and an existing ./nodedr-restaurant-pos checkout is updated in
 # place rather than clobbered.
 set -euo pipefail
 
-REPO_URL="https://github.com/Raktim94/nodedr-restaurant-pos.git"
-REPO_DIR="nodedr-restaurant-pos"
+REPO_URL="https://github.com/Nomaan2288/Restaurant-Management-System.git"
+REPO_DIR="Restaurant-Management-System"
 SUDO=""
 
 install_docker_linux() {

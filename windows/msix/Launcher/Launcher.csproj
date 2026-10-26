@@ -55,9 +55,9 @@
     <SelfContained>true</SelfContained>
 
     <Version>1.0.4.0</Version>
-    <Product>Nodedr OrderRestro</Product>
-    <Company>Nodedr Infotech Private Limited</Company>
-    <Copyright>Copyright © Nodedr Infotech Private Limited</Copyright>
+    <Product>OrderRestro</Product>
+    <Company>Noman Shaikh</Company>
+    <Copyright>Copyright © Noman Shaikh</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

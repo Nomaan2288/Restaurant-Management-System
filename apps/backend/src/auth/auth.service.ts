@@ -17,6 +17,11 @@ import * as bcrypt from 'bcrypt';
 import { PrismaService } from '../prisma/prisma.service';
 import { TwoFactorService } from './two-factor.service';
 
+// Fixed dummy bcrypt cost-12 hash used to equalize execution timing
+// and prevent user-enumeration timing attacks when an account does not exist.
+const DUMMY_BCRYPT_HASH =
+  '$2b$12$e80n9RzY834Qp28xN0YQ7.bC0n7Q4u1O4z9O9r8k3p6M4q1w0x7e2';
+
 @Injectable()
 export class AuthService {
   constructor(
@@ -50,12 +55,11 @@ export class AuthService {
       },
     });
 
-    if (!user) {
-      throw new UnauthorizedException('Invalid email or password');
-    }
-
-    const valid = await bcrypt.compare(dto.password, user.passwordHash);
-    if (!valid) {
+    const valid = await bcrypt.compare(
+      dto.password,
+      user?.passwordHash ?? DUMMY_BCRYPT_HASH,
+    );
+    if (!user || !valid) {
       throw new UnauthorizedException('Invalid email or password');
     }
 
@@ -161,22 +165,23 @@ export class AuthService {
       },
     });
 
-    if (!user || !user.isActive || !user.pinHash) {
+    const isAvailable = Boolean(user && user.isActive && user.pinHash);
+    const valid = await bcrypt.compare(
+      dto.pin,
+      user?.pinHash ?? DUMMY_BCRYPT_HASH,
+    );
+    if (!isAvailable) {
       throw new UnauthorizedException('PIN login not available for this user');
     }
-    // A 4-8 digit PIN must not be a way around the second factor.
-    if (user.twoFactorEnabled) {
+    if (user!.twoFactorEnabled) {
       throw new UnauthorizedException(
         'PIN login is off for accounts with two-factor authentication — sign in with your password',
       );
     }
-
-    const valid = await bcrypt.compare(dto.pin, user.pinHash);
     if (!valid) {
       throw new UnauthorizedException('Incorrect PIN');
     }
-
-    return this.issueSession(user);
+    return this.issueSession(user!);
   }
 
   private async issueSession(
