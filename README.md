@@ -1,8 +1,4 @@
-<div align="center">
 
-<img src="apps/web/public/brand-lockup.png" alt="Nodedr OrderRestro" width="520">
-
-<img src="docs/orderrestro-cover.jpg" alt="Illustrative evening scene in an independent restaurant" width="100%">
 
 **Open-source, self-hosted restaurant POS & management system** — billing
 with **UPI QR payments**, tables, kitchen display (KDS), reservations,
@@ -23,11 +19,6 @@ dine-in, takeaway, delivery and kitchen operations.
 
 **Created By Noman Shaikh**
 
-**[GitHub Repository](https://github.com/Nomaan2288/Restaurant-Management-System)** · **Maintainer: Noman Shaikh**
-
-<p align="center">
-  <img src="docs/assets/hero-animated.svg" alt="Nodedr OrderRestro: animated overview with an illustrative sample screen" width="100%">
-</p>
 
 
 [Quick Start](#quick-start) ·
